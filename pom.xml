@@ -11,8 +11,8 @@
 	<groupId>com.samiharoon</groupId>
 	<artifactId>api-tdd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-tdd</name>
-	<description>Demo project for Spring Boot Test Driven Development</description>
+	<name>java-spring-bot-api-crud-tdd</name>
+	<description>Demo project for Java Spring Boot Restful API with Test Driven Development</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
