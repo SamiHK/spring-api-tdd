@@ -1,4 +1,4 @@
-# api-tdd
+# Spring Boot Restful CRUD-API implementation with Unit Tests
  
 Demo project for Java Spring Boot Restful API with Test Driven Development
 
