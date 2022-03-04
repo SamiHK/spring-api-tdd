@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface SampleService {
     List<Sample> getAllSamples(Sort sort);
 
-    List<SampleDTO> crateSamplesList(List<Sample> samples);
+    List<SampleDTO> createSamplesList(List<Sample> samples);
 
     Sample insertSample(SampleRequest sampleRequest);
 

@@ -27,7 +27,7 @@ public class SampleController {
         try {
             Sort sort = Sort.by(Sort.Direction.ASC, "id");
             List<Sample> samples = sampleService.getAllSamples(sort);
-            ResponseEntity response = GenericResponseEntity.create(StatusCodes.SUCCESS, sampleService.crateSamplesList(samples), HttpStatus.OK);
+            ResponseEntity response = GenericResponseEntity.create(StatusCodes.SUCCESS, sampleService.createSamplesList(samples), HttpStatus.OK);
             return response;
 
         } catch (Exception e) {
@@ -39,7 +39,6 @@ public class SampleController {
     public ResponseEntity<?> getSampleById(@PathVariable Long id) throws Exception {
         try {
             Optional<Sample> sample = sampleService.findById(id);
-
             ResponseEntity response;
 
             if(sample.isPresent()){

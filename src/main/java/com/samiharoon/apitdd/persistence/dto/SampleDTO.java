@@ -20,5 +20,4 @@ public class SampleDTO {
     private String firstName;
     private String lastName;
     private Date date;
-
 }

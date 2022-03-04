@@ -6,6 +6,7 @@ import com.samiharoon.apitdd.persistence.request.SampleRequest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.quality.MockitoHint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
 @AutoConfigureMockMvc
-class ApiTddApplicationTests {
+public class ApiTddApplicationTests {
 
     @Autowired
     private MockMvc mockMvc;
@@ -59,6 +60,7 @@ class ApiTddApplicationTests {
                 .andExpect(status().isBadRequest());
     }
 
+    @Test
     public void getAllSamplesTest() throws Exception {
 
         mockMvc.perform(get("/endpoint/select").contentType(MediaType.APPLICATION_JSON))

@@ -26,7 +26,7 @@ public class SampleServiceImpl implements SampleService {
     }
 
     @Override
-    public List<SampleDTO> crateSamplesList(List<Sample> samples) {
+    public List<SampleDTO> createSamplesList(List<Sample> samples) {
         List<SampleDTO> sampleDTOS = new ArrayList<>();
 
         samples.forEach(sample -> {
